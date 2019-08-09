@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=BioRhyme|Karla|Montserrat|Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div>
+          <p class="display-3 text-center">
+            <i class="fa fa-utensils"></i> Hot Restaurant
+          </p>
+          <p class="h3 text-center">
+            We only have 5 tables! Book your seat before they are gone.
+          </p>
+        </div>
+        <div class="text-center m-4">
+                <a id="view-table-btn" href="/public/tables.html" class="btn btn-primary"><i class="fa fa-list-alt"></i> View Tables</a>
+                <a id="make-reservation-btn" href="/public/reservation.html" class="btn btn-secondary"><i class="fa fa-money"></i> Make Reservation</a>
+            </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Current Tables in Use -->
+          <div class="card">
+            <div class="card-header">
+              <h4>Current Reservations</h4>
+            </div>
+            <div class="card-body">
+              <ul id="tableList" class="list-group"></ul>
+            </div>
+          </div>
+
+          <!-- Waiting List Card -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <h4>Waiting List</h4>
+            </div>
+            <div class="card-body">
+              <ul id="waitList" class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
